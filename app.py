@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('/content/drive/MyDrive/endterm.pkl','rb'))
+model = pickle.load(open('endterm.pkl','rb'))
 
-dataset = pd.read_csv('/content/PCA and NN Dataset11.csv')
+dataset = pd.read_csv('PCA and NN Dataset11.csv')
 dataset=dataset.drop(['Surname'], axis = 1)
 
 X = dataset.iloc[:, :-1].values
